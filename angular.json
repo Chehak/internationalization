@@ -22,6 +22,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "baseHref": "/internationalization/",
             "localize":true,
             "i18nMissingTranslation": "error",
             "outputPath": "dist/i18n",
