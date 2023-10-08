@@ -4,6 +4,13 @@
   "newProjectRoot": "projects",
   "projects": {
     "i18n": {
+        "i18n":{
+        "sourceLocale": "en-US",
+        "locales":{
+        "es-PR":"src/locale/messages.es.xlf"
+        }
+        },
+
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,6 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "localize":["es-PR"],
             "outputPath": "dist/i18n",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -94,5 +102,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "bbc7d1f3-bc3d-4727-a953-ecd5855a7ead"
   }
 }
